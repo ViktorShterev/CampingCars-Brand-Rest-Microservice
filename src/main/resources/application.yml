@@ -1,0 +1,40 @@
+spring:
+    application:
+        name: brand-rest-app
+    datasource:
+        url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/new_brands?createDatabaseIfNotExist=true
+        username: ${MYSQL_USER:root}
+        password: ${MYSQL_PASSWORD:}
+    jpa:
+        defer-datasource-initialization: true
+        properties:
+            hibernate:
+                format_sql: true
+        hibernate:
+            ddl-auto: update
+    sql:
+        init:
+            mode: never
+
+
+server:
+    port: 8081
+
+management:
+    endpoints:
+        web:
+            exposure:
+                include: "*"
+    server:
+        port: 8082
+
+
+logging:
+    level:
+        org.hibernate.SQL: DEBUG
+        org.hibernate.orm.jdbc.bind: TRACE
+
+brand.retention.period: P300D
+
+jwt:
+    secret: ${JWT_KEY:WSdv1kEE1tCT1a8ihRSqfwMNzlPBq8IWSdv1kEE1tCT1a8ihRSqfwMNzlPBq8IWSdv1kEE1tCT1a8ihRSqfwMNzlPBq8I}
