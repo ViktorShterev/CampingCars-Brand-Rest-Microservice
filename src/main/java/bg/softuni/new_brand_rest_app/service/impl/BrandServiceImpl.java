@@ -1,7 +1,7 @@
 package bg.softuni.new_brand_rest_app.service.impl;
 
-import bg.softuni.new_brand_rest_app.entity.Brand;
-import bg.softuni.new_brand_rest_app.entity.ModelId;
+import bg.softuni.new_brand_rest_app.model.entity.Brand;
+import bg.softuni.new_brand_rest_app.model.entity.ModelId;
 import bg.softuni.new_brand_rest_app.model.dto.BrandRestDTO;
 import bg.softuni.new_brand_rest_app.model.dto.ModelRestDTO;
 import bg.softuni.new_brand_rest_app.repository.BrandRepository;

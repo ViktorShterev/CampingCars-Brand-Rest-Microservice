@@ -1,4 +1,4 @@
-package bg.softuni.new_brand_rest_app.entity;
+package bg.softuni.new_brand_rest_app.model.entity;
 
 import jakarta.persistence.*;
 

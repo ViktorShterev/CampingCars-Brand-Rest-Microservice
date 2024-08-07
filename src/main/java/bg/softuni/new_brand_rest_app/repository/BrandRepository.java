@@ -1,7 +1,7 @@
 package bg.softuni.new_brand_rest_app.repository;
 
 
-import bg.softuni.new_brand_rest_app.entity.Brand;
+import bg.softuni.new_brand_rest_app.model.entity.Brand;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
