@@ -26,7 +26,7 @@ public class OpenAPIConfig {
 
         openAPI.setInfo(
                 new Info()
-                        .description("This is the camping cars brand micro service.")
+                        .description("This is the camping cars brand microservice.")
                         .title("Camping Cars brand API")
                         .version("0.0.1")
                         .contact(

@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/brands")
+@RequestMapping("http://brands-microservice:8081/brands")
 @Tag(
         name = "Brands",
         description = "The controller responsible for brand management."

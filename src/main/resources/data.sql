@@ -1,6 +1,6 @@
 /*Populating brands table*/
 
-INSERT INTO brands (name)
+INSERT INTO new_brands.brands (name)
 VALUES ('Weinsberg'),
        ('Hobby'),
        ('LMC'),
@@ -20,7 +20,7 @@ VALUES ('Weinsberg'),
 
 /*Populating models table*/
 
-INSERT INTO model_ids (value, brand_id)
+INSERT INTO new_brands.model_ids (value, brand_id)
 VALUES (1, 1),
        (2, 2),
        (3, 3),
