@@ -8,6 +8,9 @@ COPY build.gradle build.gradle
 COPY settings.gradle settings.gradle
 COPY src src
 
+# Copy the data.sql into the container
+COPY src/main/resources/data.sql /docker-entrypoint-initdb.d/
+
 RUN chmod +x gradlew
 
 RUN ./gradlew build -x test

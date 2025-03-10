@@ -2,16 +2,20 @@ spring:
     application:
         name: brand-rest-app
     datasource:
-        url: jdbc:mysql://mysql-microservice:${MYSQL_PORT:3306}/new_brands?createDatabaseIfNotExist=true
+        driverClassName: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://mysql-microservice:${MYSQL_PORT:3307}/new_brands?createDatabaseIfNotExist=true
         username: ${MYSQL_USER:root}
         password: ${MYSQL_PASSWORD:}
     jpa:
+        database-platform: org.hibernate.dialect.MySQLDialect
         defer-datasource-initialization: true
         properties:
             hibernate:
+                dialect: org.hibernate.dialect.MySQLDialect
                 format_sql: true
+                default_schema: new_brands
         hibernate:
-            ddl-auto: update
+            ddl-auto: create
     sql:
         init:
             mode: always
@@ -40,4 +44,4 @@ logging:
 brand.retention.period: P300D
 
 jwt:
-    secret: ${JWT_KEY:WSdv1kEE1tCT1a8ihRSqfwMNzlPBq8IWSdv1kEE1tCT1a8ihRSqfwMNzlPBq8IWSdv1kEE1tCT1a8ihRSqfwMNzlPBq8I}
+    secret: ${JWT_KEY}
