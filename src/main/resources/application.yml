@@ -15,7 +15,7 @@ spring:
                 format_sql: true
                 default_schema: new_brands
         hibernate:
-            ddl-auto: create
+            ddl-auto: update
     sql:
         init:
             mode: always
