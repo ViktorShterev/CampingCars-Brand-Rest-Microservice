@@ -17,7 +17,7 @@ VALUES (1, 'Weinsberg'),
        (11, 'Kabe'),
        (12, 'Benimar'),
        (13, 'Carthago'),
-       (14, 'Bürstner'),
+       (14, 'Buerstner'),
        (15, 'Hymer'),
        (16, 'Dethleffs');
 
