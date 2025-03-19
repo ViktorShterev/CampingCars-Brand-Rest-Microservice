@@ -8,7 +8,7 @@ Welcome to the **CampingCars-Brand-Rest-Microservice**! This microservice is des
 
 *   **Data Management**: Stores and manages camper and caravan brands and their respective models.
     
-*   **RESTful API**: Transfers data to the [**CampingCars-softuni-final-project**](https://github.com/ViktorShterev/CampingCars-softuni-final-project) in **JSON** format.
+*   **RESTful API**: Transfers data to the [**CampingCars-softuni-final-project**](https://github.com/ViktorShterev/CampingCars-Project) in **JSON** format.
     
 *   **Secure Communication**: Ensures secure data exchange via JWT tokens.
     
