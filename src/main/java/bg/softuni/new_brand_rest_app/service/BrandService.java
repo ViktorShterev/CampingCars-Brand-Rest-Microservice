@@ -12,6 +12,4 @@ public interface BrandService {
     void addBrandModel(BrandRestDTO brandRestDTO);
 
     void deleteBrand(String name);
-
-//    BrandDTO addBrandModel(BrandModelAddBindingModel brandModelAddBindingModel);
 }

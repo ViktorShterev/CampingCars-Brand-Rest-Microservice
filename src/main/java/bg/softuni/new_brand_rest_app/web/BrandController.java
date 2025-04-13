@@ -90,43 +90,4 @@ public class BrandController {
 
         return ResponseEntity.noContent().build();
     }
-
-
-//    @Operation(
-//            security = @SecurityRequirement(
-//                    name = "bearer-token"
-//            )
-//    )
-//    @PostMapping("/add")
-//    public ResponseEntity<BrandDTO> addBrandModel(
-//            @RequestBody BrandModelAddBindingModel brandModelAddBindingModel
-//    ) {
-//        LOGGER.info("Going to create a brand/model {}", brandModelAddBindingModel);
-//
-//        BrandDTO brandDTO = this.brandService.addBrandModel(brandModelAddBindingModel);
-//
-//        return ResponseEntity.
-//                created(
-//                        ServletUriComponentsBuilder
-//                                .fromCurrentRequest()
-//                                .path("/{id}")
-//                                .buildAndExpand(brandDTO.id())
-//                                .toUri()
-//                ).body(brandDTO);
-//    }
-
-
-//    @Operation(
-//            security = @SecurityRequirement(
-//                    name = "bearer-token"
-//            )
-//    )
-//    @DeleteMapping("/{id}")
-//    public ResponseEntity<OfferDTO> deleteById(@PathVariable("id") Long id,
-//                                               @AuthenticationPrincipal UserDetails userDetails) {
-//        offerService.deleteOffer(userDetails, id);
-//        return ResponseEntity
-//                .noContent()
-//                .build();
-//    }
 }
